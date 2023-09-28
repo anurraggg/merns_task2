@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <span>1st Number: </span> <input type="text" id="i1" placeholder="Enter first number"/> <br> <br>
+    <span>2nd Number: </span><input type="text" id="i2" placeholder="Enter second number"/> <br> <br>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <p id="i3">Result: </p>
+    </body>
+    <script>
+        function multiply(){
+            var i1=document.getElementById("i1").value;
+            var a=Number.parseInt(i1);
+            var i2=document.getElementById("i2").value;
+            var b=Number.parseInt(i2);
+            var prod=a*b;
+            document.getElementById("i3").innerHTML="Result: "+prod;
+        }
+
+        function divide(){
+            var i1=document.getElementById("i1").value;
+            var a=Number.parseInt(i1);
+            var i2=document.getElementById("i2").value;
+            var b=Number.parseInt(i2);
+            var div=a/b;
+            document.getElementById("i3").innerHTML="Result: "+div;
+        }
+    </script>

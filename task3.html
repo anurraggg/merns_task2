@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container{
+        margin-top: 100px;
+    }
+
+    .input-group{
+        margin-bottom: 20px;
+    }
+
+    .send-button{
+        background-color: rgb(211, 175, 41);
+        color:  white;
+        border: none;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 8px;
+        cursor: pointer;
+        border-style: solid;
+        border-radius: 4px;
+        margin-right: 2px;
+        transition: opacity 0.15s;
+    }
+    .button{
+        margin-top: 40px;
+        margin-left: 500px;
+    }
+</style>
+<body>
+    <div class="container">
+        <form>
+            
+            <div class="input-group">
+                <label class="col-sm-4">First Name:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="First Name">
+            </div>
+
+            
+            <div class="input-group">
+                <label class="col-sm-4">Last Name:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="Last Name">
+            </div>
+
+            <div class="input-group">
+                <label class="col-sm-4">Email:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="Email">
+            </div>
+
+            <div class="input-group">
+                <label class="col-sm-12">Phone:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="Phone">
+            </div>
+
+            <div class="input-group">
+                <label class="col-sm-12">Address:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="Address">
+            </div>
+
+            <div class="input-group">
+                <label class="col-sm-12">City:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="City">
+            </div>
+
+            <div class="input-group">
+                <label class="col-sm-12">State:</label>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input id="text" type="text" class="form-control" name="email" placeholder="State">
+            </div>
+
+            <div class="input-group">
+                <label class="col-sm-4">Project Description</label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea class="form-control" rows="2" col="2" id="comment"></textarea>
+              </div>
+
+              <div class="button">
+              <button class="send-button">Send <i class="glyphicon glyphicon-send"></i> </button>
+              </div>
+    </div>
+</body>

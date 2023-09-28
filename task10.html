@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <style>
+        #animation-container {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="animation-container"></div>
+    <button id="startButton">Start</button>
+    <button id="stopButton" disabled>Stop</button>
+
+    <script>
+        const animationContainer = document.getElementById('animation-container');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        let animationId;
+
+        function animate() {
+            const currentPosition = parseInt(animationContainer.style.left) || 0;
+            const newPosition = currentPosition + 1;
+            animationContainer.style.left = newPosition + 'px';
+            animationId = requestAnimationFrame(animate);
+        }
+
+        function startAnimation() {
+            startButton.disabled = true;
+            stopButton.disabled = false;
+            animationId = requestAnimationFrame(animate);
+        }
+
+        function stopAnimation() {
+            startButton.disabled = false;
+            stopButton.disabled = true;
+            cancelAnimationFrame(animationId);
+        }
+
+        startButton.addEventListener('click', startAnimation);
+        stopButton.addEventListener('click', stopAnimation);
+    </script>
+</body>
+</html>
